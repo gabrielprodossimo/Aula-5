@@ -1,13 +1,13 @@
-package polígonos;
+package poligonos;
 
-public class Retângulo extends Polígono {
+public class Retangulo extends Poligono {
 
-    public Retângulo(int lado) { // cria quadrado
+    public Retangulo(int lado) { // cria quadrado
         super(4, lado, "quadrado");
         //_tipo = "quadrado"; // gera erro se _tipo for private 
     }    
 
-    public Retângulo(int largura, int altura) {
+    public Retangulo(int largura, int altura) {
         super(new int[4], "retângulo");
         // gera erro se _lados for private
         _lados[0] = _lados[2] = largura;

@@ -1,6 +1,6 @@
-package polígonos;
+package poligonos;
 
-public class Polígono {
+public class Poligono {
     protected int[] _lados; // trocar por acesso private faz com que 
                             // subclasses não possam acessar atributo diretamente
 
@@ -15,25 +15,25 @@ public class Polígono {
     // Cria um polígono com array de lados e descrição de tipo.
     // Se construtor não for public, não podemos criar novo objeto 
     // (usaremos isso mais para a frente)
-    public Polígono(int[] lados, String tipo) {
+    public Poligono(int[] lados, String tipo) {
         _lados = lados;
         _tipo = tipo;
         _no_polígonos += 1; // incrementa total de objetos dessa classe (ou subclasses) criados
     }
 
-    public Polígono(int[] lados) {
+    public Poligono(int[] lados) {
         this(lados, "polígono"); // chama construtor acima
     }
 
     // Cria polígono regular com dado descrição tipo (num_lados > 0)
-    public Polígono(int num_lados, int tam_lado, String tipo) {
+    public Poligono(int num_lados, int tam_lado, String tipo) {
         this(new int[num_lados]); // chama construtor acima
         for (int i = 0; i < num_lados; i++) _lados[i] = tam_lado;
         _tipo = tipo;
     }
 
     // Polígono regular (numn_lados > 0)
-    public Polígono(int num_lados, int tam_lado) {
+    public Poligono(int num_lados, int tam_lado) {
         this(num_lados, tam_lado, "polígono regular"); // chama construtor acima
     }
 
@@ -42,10 +42,10 @@ public class Polígono {
     }
 
     // Verifica se polígonos possuem mesma unidade de medida
-    public boolean éCompatívelCom(Polígono outro) {
+    public boolean éCompatívelCom(Poligono outro) {
         return _unidade.equals(outro._unidade);
     }
-    public static boolean sãoCompatíveis(Polígono um, Polígono outro) {
+    public static boolean sãoCompatíveis(Poligono um, Poligono outro) {
         return um._unidade.equals(outro._unidade);
     }
 

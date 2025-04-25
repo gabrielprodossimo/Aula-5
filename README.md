@@ -1,4 +1,3 @@
-# Aula-5
+Crie casos de uso na classe App para classes e métodos criados. 
 
- 
- Adicione também um atributo cor privado. Crie métodos para acessar e modificar os atributos de triângulos (getters e setters). Especialize a classe Triângulo para criar subclasses representando um Triângulo Equilátero (todos os lados de mesmo tamanho) e um Triângulo Isósceles (dois lados iguais e um diferente). Crie construtores com argumentos de acordo com cada subclasse. A classe para triângulo equilátero deve ter métodos para recuperar ou modificar o lado. A classe para triângulo isósceles deve ter métodos para modificar o lado duplicado e o lado distinto. Crie casos de uso na classe App para classes e métodos criados. Crie testes automatizados para os métodos calcularÁrea e calcularPerímetro.
+Crie testes automatizados para os métodos calcularÁrea e calcularPerímetro.
